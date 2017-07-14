@@ -1,2 +1,2 @@
-# agrogestao
-Gestão de Fazendas
+# AgroGestão
+Sistema de Gestão de Fazendas
