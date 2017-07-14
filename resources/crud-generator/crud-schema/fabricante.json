@@ -1,0 +1,18 @@
+{
+    "fields": [
+        {
+            "name": "nome_fabricante",
+            "type": "string"
+        },
+        {
+            "name": "obs_fabricante",
+            "type": "text"
+        }
+    ],
+    "validations": [
+        {
+            "field": "nome_fabricante",
+            "rules": "required|max:120"
+        }
+    ]
+}

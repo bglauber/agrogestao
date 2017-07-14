@@ -7,20 +7,20 @@
 
             <div class="col-md-9">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Veiculo {{ $veiculo->id }}</div>
+                    <div class="panel-heading">TipoVeiculo {{ $tipoveiculo->id }}</div>
                     <div class="panel-body">
 
-                        <a href="{{ url('/admin/veiculo') }}" title="Back"><button class="btn btn-warning btn-xs"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
-                        <a href="{{ url('/admin/veiculo/' . $veiculo->id . '/edit') }}" title="Edit Veiculo"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+                        <a href="{{ url('/admin/tipo-veiculo') }}" title="Back"><button class="btn btn-warning btn-xs"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+                        <a href="{{ url('/admin/tipo-veiculo/' . $tipoveiculo->id . '/edit') }}" title="Edit TipoVeiculo"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
                         {!! Form::open([
                             'method'=>'DELETE',
-                            'url' => ['admin/veiculo', $veiculo->id],
+                            'url' => ['admin/tipoveiculo', $tipoveiculo->id],
                             'style' => 'display:inline'
                         ]) !!}
                             {!! Form::button('<i class="fa fa-trash-o" aria-hidden="true"></i> Delete', array(
                                     'type' => 'submit',
                                     'class' => 'btn btn-danger btn-xs',
-                                    'title' => 'Delete Veiculo',
+                                    'title' => 'Delete TipoVeiculo',
                                     'onclick'=>'return confirm("Confirm delete?")'
                             ))!!}
                         {!! Form::close() !!}
@@ -31,9 +31,9 @@
                             <table class="table table-borderless">
                                 <tbody>
                                     <tr>
-                                        <th>ID</th><td>{{ $veiculo->id }}</td>
+                                        <th>ID</th><td>{{ $tipoveiculo->id }}</td>
                                     </tr>
-                                    <tr><th> Nome Veiculo </th><td> {{ $veiculo->nome_veiculo }} </td></tr><tr><th> Id Tipo Veiculo </th><td> {{ $veiculo->id_tipo_veiculo }} </td></tr><tr><th> Id Fabricante Veiculo </th><td> {{ $veiculo->id_fabricante_veiculo }} </td></tr>
+                                    <tr><th> Nome Tipo Veiculo </th><td> {{ $tipoveiculo->nome_tipo_veiculo }} </td></tr><tr><th> Dsc Tipo Veiculo </th><td> {{ $tipoveiculo->dsc_tipo_veiculo }} </td></tr>
                                 </tbody>
                             </table>
                         </div>

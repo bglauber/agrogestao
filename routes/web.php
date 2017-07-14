@@ -20,3 +20,19 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('admin/veiculo', 'Admin\\VeiculoController');
 
 Auth::routes();
+
+Route::resource('admin/tipo-lubrificante', 'Admin\\TipoLubrificanteController');
+Route::resource('admin/fabricante', 'Admin\\FabricanteController');
+Route::resource('admin/fabricante', 'Admin\\FabricanteController');
+Route::resource('admin/fabricante', 'Admin\\FabricanteController');
+Route::resource('admin/fabricante', 'Admin\\FabricanteController');
+Route::resource('admin/tipo-veiculo', 'Admin\\TipoVeiculoController');
+Route::resource('admin/veiculo', 'Admin\\VeiculoController');
+Route::resource('admin/tipo-veiculo', 'Admin\\TipoVeiculoController');
+Route::resource('admin/fabricante', 'Admin\\FabricanteController');
+Route::resource('admin/fabricante', 'Admin\\FabricanteController');
+Route::resource('admin/fabricante', 'Admin\\FabricanteController');
+Route::resource('admin/fabricante', 'Admin\\FabricanteController');
+Route::resource('admin/veiculo', 'Admin\\VeiculoController');
+Route::resource('admin/tipo-veiculo', 'Admin\\TipoVeiculoController');
+Route::resource('admin/veiculo', 'Admin\\VeiculoController');

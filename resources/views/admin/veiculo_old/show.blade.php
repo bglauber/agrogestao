@@ -33,7 +33,7 @@
                                     <tr>
                                         <th>ID</th><td>{{ $veiculo->id }}</td>
                                     </tr>
-                                    <tr><th> Nome Veiculo </th><td> {{ $veiculo->nome_veiculo }} </td></tr><tr><th> Id Tipo Veiculo </th><td> {{ $veiculo->id_tipo_veiculo }} </td></tr><tr><th> Id Fabricante Veiculo </th><td> {{ $veiculo->id_fabricante_veiculo }} </td></tr>
+                                    <tr><th> Nome Veiculo </th><td> {{ $veiculo->nome_veiculo }} </td></tr><tr><th> Dsc Veiculo </th><td> {{ $veiculo->dsc_veiculo }} </td></tr><tr><th> Tipo Veiculo </th><td> {{ $veiculo->tipo_veiculo }} </td></tr>
                                 </tbody>
                             </table>
                         </div>

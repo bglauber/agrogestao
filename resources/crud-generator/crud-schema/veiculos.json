@@ -1,0 +1,88 @@
+{
+    "fields": [
+        {
+            "name": "nome_veiculo",
+            "type": "string"
+        },
+        {
+            "name": "id_tipo_veiculo",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "id_fabricante_veiculo",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "modelo_veiculo",
+            "type": "string"
+        },
+        {
+            "name": "chassi_veiculo",
+            "type": "string"
+        },
+        {
+            "name": "renavam_veiculo",
+            "type": "string"
+        },
+        {
+            "name": "ano_fabricacao_veiculo",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "ano_modelo_veiculo",
+            "type": "integer#unsigned"
+        },
+        {
+            "name": "valor_aquisicao_veiculo",
+            "type": "double"
+        },
+        {
+            "name": "valor_atual_veiculo",
+            "type": "double"
+        },
+        {
+            "name": "dsc_veiculo",
+            "type": "text"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "id_tipo_veiculo",
+            "references": "id",
+            "on": "tipo_veiculos",
+            "onDelete": "cascade"
+        },
+        {
+            "column": "id_fabricante_veiculo",
+            "references": "id",
+            "on": "fabricantes",
+            "onDelete": "cascade"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "tipo_veiculo",
+            "type": "belongsTo",
+            "class": "App\\TipoVeiculo"
+        },
+        {
+            "name": "fabricante",
+            "type": "belongsTo",
+            "class": "App\\Fabricante"
+        }
+    ],
+    "validations": [
+        {
+            "field": "nome_veiculo",
+            "rules": "required|max:120"
+        },
+        {
+            "field": "ano_fabricacao_veiculo",
+            "rules": "required|max:4|min:4"
+        },
+        {
+            "field": "ano_modelo_veiculo",
+            "rules": "required|max:4|min:4"
+        }
+    ]
+}

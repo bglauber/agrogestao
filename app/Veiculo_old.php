@@ -25,7 +25,11 @@ class Veiculo extends Model
      *
      * @var array
      */
-    protected $fillable = ['nome_veiculo', 'id_tipo_veiculo', 'id_fabricante_veiculo', 'modelo_veiculo', 'chassi_veiculo', 'renavam_veiculo', 'ano_fabricacao_veiculo', 'ano_modelo_veiculo', 'valor_aquisicao_veiculo', 'valor_atual_veiculo', 'dsc_veiculo'];
+    protected $fillable = ['nome_veiculo', 'dsc_veiculo', 'tipo_veiculo', 'user_id'];
 
-    
+    public function user()
+	{
+		return $this->belongsTo('App\User');
+	}
+	
 }

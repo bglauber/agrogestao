@@ -1,0 +1,18 @@
+{
+    "fields": [
+        {
+            "name": "nome_tipo_veiculo",
+            "type": "string"
+        },
+        {
+            "name": "dsc_tipo_veiculo",
+            "type": "text"
+        }
+    ],
+    "validations": [
+        {
+            "field": "nome_tipo_veiculo",
+            "rules": "required|max:100"
+        }
+    ]
+}

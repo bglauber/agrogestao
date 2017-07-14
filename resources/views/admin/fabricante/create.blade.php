@@ -7,9 +7,9 @@
 
             <div class="col-md-9">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Create New Veiculo</div>
+                    <div class="panel-heading">Create New Fabricante</div>
                     <div class="panel-body">
-                        <a href="{{ url('/admin/veiculo') }}" title="Back"><button class="btn btn-warning btn-xs"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+                        <a href="{{ url('/admin/fabricante') }}" title="Back"><button class="btn btn-warning btn-xs"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
                         <br />
                         <br />
 
@@ -21,9 +21,9 @@
                             </ul>
                         @endif
 
-                        {!! Form::open(['url' => '/admin/veiculo', 'class' => 'form-horizontal', 'files' => true]) !!}
+                        {!! Form::open(['url' => '/admin/fabricante', 'class' => 'form-horizontal', 'files' => true]) !!}
 
-                        @include ('admin.veiculo.form')
+                        @include ('admin.fabricante.form')
 
                         {!! Form::close() !!}
 

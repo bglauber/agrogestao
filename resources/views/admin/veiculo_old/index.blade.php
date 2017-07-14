@@ -30,14 +30,14 @@
                             <table class="table table-borderless">
                                 <thead>
                                     <tr>
-                                        <th>ID</th><th>Nome Veiculo</th><th>Id Tipo Veiculo</th><th>Id Fabricante Veiculo</th><th>Actions</th>
+                                        <th>ID</th><th>Nome Veiculo</th><th>Dsc Veiculo</th><th>Tipo Veiculo</th><th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($veiculo as $item)
                                     <tr>
                                         <td>{{ $item->id }}</td>
-                                        <td>{{ $item->nome_veiculo }}</td><td>{{ $item->id_tipo_veiculo }}</td><td>{{ $item->id_fabricante_veiculo }}</td>
+                                        <td>{{ $item->nome_veiculo }}</td><td>{{ $item->dsc_veiculo }}</td><td>{{ $item->nome_tipo_veiculo }}</td>
                                         <td>
                                             <a href="{{ url('/admin/veiculo/' . $item->id) }}" title="View Veiculo"><button class="btn btn-info btn-xs"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
                                             <a href="{{ url('/admin/veiculo/' . $item->id . '/edit') }}" title="Edit Veiculo"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>

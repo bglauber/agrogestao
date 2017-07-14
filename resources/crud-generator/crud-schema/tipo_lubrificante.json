@@ -1,0 +1,18 @@
+{
+    "fields": [
+        {
+            "name": "tipo_lubrificante",
+            "type": "string"
+        },
+        {
+            "name": "dsc_tipo_lubrificante",
+            "type": "text"
+        },
+    ],
+    "validations": [
+        {
+            "field": "tipo_lubrificante",
+            "rules": "required|max:100"
+        }
+    ]
+}
