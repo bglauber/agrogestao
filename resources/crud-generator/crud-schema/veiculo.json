@@ -1,0 +1,42 @@
+{
+    "fields": [
+        {
+            "name": "nome_veiculo",
+            "type": "string"
+        },
+        {
+            "name": "dsc_veiculo",
+            "type": "text"
+        },
+        {
+            "name": "tipo_veiculo",
+            "type": "select",
+            "options": ["technology", "tips", "health"]
+        },
+        {
+            "name": "user_id",
+            "type": "integer#unsigned"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "user_id",
+            "references": "id",
+            "on": "users",
+            "onDelete": "cascade"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "user",
+            "type": "belongsTo",
+            "class": "App\\User"
+        }
+    ],
+    "validations": [
+        {
+            "field": "title",
+            "rules": "required|max:20"
+        }
+    ]
+}
