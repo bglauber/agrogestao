@@ -29,3 +29,5 @@ class Fabricante extends Model
 
     
 }
+
+
